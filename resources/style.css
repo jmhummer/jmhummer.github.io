@@ -1,0 +1,23 @@
+
+html {
+    font-family: Calibri;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    background-color: silver;
+    display: inline-flex;
+    width: 100%;
+    
+}
+
+header li {
+    font-size: 2rem;
+    display: inline;
+}
