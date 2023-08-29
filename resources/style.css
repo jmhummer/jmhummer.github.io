@@ -1,6 +1,30 @@
+/* Dark mode settings */
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color: white;
+        background-color: black;
+    }
+
+    header {
+        background-color: gray;
+    }
+}
+
+/* Light mode settings */
+
+@media (prefers-color-scheme: light) {
+    /* Use default html text color/background */
+
+    header {
+        background-color: silver;
+    }
+}
+
+/* Universal themes */
 
 html {
-    font-family: Calibri;
+    font-family: Roboto;
 }
 
 *{
@@ -11,15 +35,30 @@ html {
 }
 
 header {
-    background-color: silver;
     display: inline-flex;
-    width: 100%;
     justify-content: center;
-    
+    position: fixed;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 header li {
     font-size: 2rem;
     display: inline;
     padding: 0 2rem;
+    
 }
+
+div {
+    margin: 0 2rem;
+}
+
+span {
+    height: 2rem;
+    display: inline-block;
+}
+
+.welcome {
+    padding-top: 2rem;
+}
+
