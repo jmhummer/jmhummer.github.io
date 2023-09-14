@@ -9,6 +9,10 @@
     header {
         background-color: gray;
     }
+
+    * {
+        border-color: white;
+    }
 }
 
 /* Light mode settings */
@@ -18,6 +22,10 @@
 
     header {
         background-color: silver;
+    }
+
+    * {
+        border-color: black;
     }
 }
 
@@ -30,7 +38,6 @@ html {
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
 }
 
@@ -40,6 +47,7 @@ header {
     position: fixed;
     flex-wrap: nowrap;
     width: 100%;
+    padding: .75rem 0;
 }
 
 header li {
@@ -59,6 +67,35 @@ span {
 }
 
 .welcome {
-    padding-top: 2rem;
+    padding-top: 2.75rem;
 }
 
+.education h2 {
+    border-bottom: 1px solid;
+}
+
+.education .cpc {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.education li {
+    display: list-item;
+    margin-left: 0rem;
+}
+
+.education .courses {
+    display: flex;
+}
+
+.education h4 {
+    width: 100%;
+}
+
+.education .java {
+    width: 40%;
+}
+
+.education .other {
+    width: 40%
+}
