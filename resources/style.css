@@ -1,32 +1,21 @@
 /* Dark mode settings */
 
-@media (prefers-color-scheme: dark) {
-    html {
-        color: white;
-        background-color: black;
-    }
-
-    header {
-        background-color: gray;
-    }
-
-    * {
-        border-color: white;
-    }
+.dark-mode {
+    background-color: black;
+    color: white;
 }
 
-/* Light mode settings */
+.dark-mode header {
+    background-color: gray;
+}
 
-@media (prefers-color-scheme: light) {
-    /* Use default html text color/background */
+.dark-mode * {
+    border-color: white;
+}
 
-    header {
-        background-color: silver;
-    }
-
-    * {
-        border-color: black;
-    }
+.dark-mode .mode-logo {
+    filter: invert(1); /*Changes the color of the moon image to stand out*/
+    transition: filter 1s ease, transform 1s ease; /*Transition time between images*/
 }
 
 /* Universal themes */
@@ -35,10 +24,14 @@ html {
     font-family: Roboto;
 }
 
+body {
+    transition: background-color 1s ease;
+}
+
 *{
     margin: 0;
-    padding: 0;
     text-decoration: none;
+    border-color: black;
 }
 
 header {
@@ -48,13 +41,22 @@ header {
     flex-wrap: nowrap;
     width: 100%;
     padding: .75rem 0;
+    background-color: silver;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 header li {
     font-size: 2rem;
     display: inline;
     padding: 0 2rem;
-    
+}
+
+main {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
 }
 
 div {
@@ -66,8 +68,18 @@ span {
     display: inline-block;
 }
 
-.welcome {
+.page-start {
     padding-top: 2.75rem;
+    margin-top: 2.75rem; /* Adjust the margin based on your header height */
+    padding: 1.25rem;
+    width: 100%;
+}
+
+.welcome-photo {
+    width: 30%;
+    margin-top: 2.75rem; /* Adjust the margin based on your header height */
+    padding: 1.25rem;
+    border-radius: 5rem;
 }
 
 .education h2 {
@@ -99,3 +111,13 @@ span {
 .education .other {
     width: 40%
 }
+
+figure {
+    height: auto;
+    cursor: pointer;
+    position:absolute;
+    left: 50%;
+    text-align: center;
+    font-size: small;
+}
+

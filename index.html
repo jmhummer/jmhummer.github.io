@@ -5,53 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto:wght@400;700&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto:wght@400;700&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+    <link src="resources/scripts/script.js" defer></script>
     <title>Joe Hummer</title>
 </head>
 <body>
     <header>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="pages/credentials.html">Credentials</a></li>
             <li>Blog (WIP)</li>
             <li>Projects (WIP)</li>
             <li>Contact (WIP)</li>
         </ul>
     </header>
     <span></span>
-    <div class="welcome">
+    <main>
+    <div class="page-start">
         <h1>Welcome to my website!</h1>
-        <h3>My name is Joe Hummer and I am learning programming and pursuing a career in tech!</h3>
-        <h4>Take a look around my website, even inspect the html/css (right click, "Inspect") and feel free to contact me with feedback!</h4>
-    </div>
-    <span></span>
-    <div class="education">
-        <h2>Education</h2>
-        <div class="cpc">
-        <h3 href="">Computer Programming Certificate - North Carolina State University</h3>
         <span></span>
-        <h4 href="https://www.engineeringonline.ncsu.edu/programs-and-courses/certificates/computer-programming-certificate/courses/">Courses and Languages</h4>
-        <div class="courses">
-            <div class="java">
-            <ul>
-                <li>Introduction to Computing - <strong>Java</strong></li>
-                <li>Software Development Fundamentals - <strong>Java</strong></li>
-                <li>Data Structures and Algorithms - <strong>Java</strong></li>
-            </ul>
-            </div>
-            <div class="other">
-            <ul>
-                <li>C and Software Tools - <strong>C</strong></li>
-                <li>Discrete Mathematics - NA</li>
-                <li>Concepts and Facilities of Operating Systems - NA</li>
-            </ul>
-            </div>
-        </div>
-        </div>
+        <h3>My name is Joe Hummer and I am learning programming and pursuing a career in software!</h3>
+        <!-- <h4>Take a look around my website, even inspect the html/css (right click, "Inspect") and feel free to contact me with feedback!</h4> -->
+        <span></span>
+        <p>After spending 6 years as a Process Engineer in Manufacturing, 
+            I decided it was time for a career change and enrolled in Computer Science courses
+            at North Carolina State University in 2023. I have recently completed their Computer Programming Certificate 
+            program and have begun learning code on my own while I look for employment opportunities. I have really enjoyed
+            my coding journey so far and I look forward to continuing my learning through personal projects!
+        </p>
+            <span></span>
+        <p>
+            Please feel free to browse my site using the pages linked in the header and contact me with any feedback. You can even Inspect
+            my html/css code (right click, "Inspect"). Hope you like it!
+        </p>
     </div>
+    <img src="images/NZ_4.jpg" class="welcome-photo" alt="Photo of me hiking the Milford Track in New Zealand">
+    </main>
     <span></span>
-    <div class="projects"><h2>Projects here</h2></div>
     <span></span>
-    <div class="experience"><h2>Experience here</h2></div>
+    <span></span>
+    <span></span>
+    <figure>
+        <image src="images/sun.svg" class="mode-logo" alt = "Light/Dark Mode toggle photo" id="modeImage" onclick="toggleMode()"></image>
+        <figcaption class="image-caption">Toggle Dark Mode</figcaption>
+        <script src="resources/scripts/script.js"></script>
+    </figure>
 </body>
 </html>
