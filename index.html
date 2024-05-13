@@ -7,49 +7,140 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto:wght@400;700&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
-    <link src="resources/scripts/script.js" defer></script>
+    
     <title>Joe Hummer</title>
 </head>
 <body>
     <header>
-        <ul>
+        <div class="logo">
+            <img src="images/NZ_4.jpg" alt="Photo of Joe hiking the Milford Track in New Zealand">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class=""nav__item><a href="#home" class="nav__link">Home</a></li>
+                <li class=""nav__item><a href="#skills" class="nav__link">Skills</a></li>
+                <li class=""nav__item><a href="#about" class="nav__link">About me</a></li>
+                <li class=""nav__item><a href="#work" class="nav__link">My Work</a></li>
+                <!-- <li><a href="pages/credentials.html">Credentials</a></li> -->
+            </ul>
+        </nav>
+        <!-- <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="pages/credentials.html">Credentials</a></li>
+            
             <li>Blog (WIP)</li>
             <li>Projects (WIP)</li>
             <li>Contact (WIP)</li>
-        </ul>
+        </ul> -->
     </header>
-    <span></span>
-    <main>
-    <div class="page-start">
-        <h1>Welcome to my website!</h1>
-        <span></span>
-        <h3>My name is Joe Hummer and I am learning programming and pursuing a career in software!</h3>
-        <!-- <h4>Take a look around my website, even inspect the html/css (right click, "Inspect") and feel free to contact me with feedback!</h4> -->
-        <span></span>
-        <p>After spending 6 years as a Process Engineer in Manufacturing, 
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Joe Hummer</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Software Engineer</p>
+        <img src="images/mexico_1.jpg" alt="Photo of Joe at Tulum ruins in Mexico">
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="service">
+            <div class="service">
+                <h3>C, Java, Python Programming Languages</h3>
+                <p>Stuff about my programming languages</p>
+            </div> <!-- Skill -->
+
+            <div class="service">
+                <h3>Algorithm Analysis, Data Structure Selection</h3>
+                <p>Stuff about Data Structures/Algorithms</p>
+            </div> <!-- Skill -->
+
+            <div class="service">
+                <h3>Software Design</h3>
+                <p>Stuff about third thing</p>
+            </div> <!-- Skill -->
+        </div> <!-- Skills -->
+
+        <a href="#work" class="btn">My Work</a>
+
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+
+        <div class="about-me__body">
+            After spending 6 years as a Process Engineer in Manufacturing, 
             I decided it was time for a career change and enrolled in Computer Science courses
-            at North Carolina State University in 2023. I have recently completed their Computer Programming Certificate 
+            at North Carolina State University in 2023. I recently completed their Computer Programming Certificate 
             program and have begun learning code on my own while I look for employment opportunities. I have really enjoyed
             my coding journey so far and I look forward to continuing my learning through personal projects!
+        </div>
+
+        <img src="" alt=""> <!--Third Image here-->
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title">My work</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="portfolio">
+            <!-- Portfolio Item 1 -->
+            <a href="#" class="portfolio__item">
+                <img src="" alt="" class="portfolio__img">
+            </a>
+            <!-- Portfolio Item 2 -->
+            <a href="#" class="portfolio__item">
+                <img src="" alt="" class="portfolio__img">
+            </a>
+            <!-- Portfolio Item 3 -->
+            <a href="#" class="portfolio__item">
+                <img src="" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <main>
+    <div class="home-content">
+    <div class="page-start">
+        <!-- <h1>Welcome to my website!</h1>
+        <span></span>
+        <h3>My name is Joe Hummer and I am learning programming and pursuing a career in software!</h3> -->
+        <!-- <h4>Take a look around my website, even inspect the html/css (right click, "Inspect") and feel free to contact me with feedback!</h4> -->
+        <!-- <span></span>
+        <p>
         </p>
             <span></span>
         <p>
             Please feel free to browse my site using the pages linked in the header and contact me with any feedback. You can even Inspect
             my html/css code (right click, "Inspect"). Hope you like it!
         </p>
+    </div> -->
+    <!-- <img src="images/NZ_4.jpg" class="welcome-photo" alt="Photo of me hiking the Milford Track in New Zealand"> -->
     </div>
-    <img src="images/NZ_4.jpg" class="welcome-photo" alt="Photo of me hiking the Milford Track in New Zealand">
     </main>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
+
+    <!-- Footer -->
+    <footer>
+        <a href="mailto:hummerjoseph@gmail.com" class="footer__link">hummerjoseph@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="www.linkedin.com/in/joseph-hummer-547005aa">Linkedin</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/jmhummer"></a>Github</li>
+            <li class="social-list__item"><a class="social-list__link" href=""></a></li>
+        </ul>
+    </footer>
+
     <figure>
-        <image src="images/sun.svg" class="mode-logo" alt = "Light/Dark Mode toggle photo" id="modeImage" onclick="toggleMode()"></image>
+        <image src="images/sun.svg" class="mode-logo" alt = "Light/Dark Mode toggle photo" id="modeImage"></image>
         <figcaption class="image-caption">Toggle Dark Mode</figcaption>
-        <script src="resources/scripts/script.js"></script>
     </figure>
+
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
