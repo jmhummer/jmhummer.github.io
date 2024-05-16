@@ -1,3 +1,19 @@
+/* Nav bar functionality */
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__link');
+
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
+})
+
+/* Dark Mode Toggle functionality */
 document.addEventListener('DOMContentLoaded', function () {
     const body = document.body;
     const modeImage = document.getElementById('modeImage');
