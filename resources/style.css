@@ -189,7 +189,7 @@ h3 { font-size: var(--fs-h3)}
     background: transparent;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 1em;
     z-index: 1000;
@@ -399,15 +399,33 @@ h3 { font-size: var(--fs-h3)}
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.portfolio__item h3 {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.portfolio__item__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .portfolio__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-
+    
 }
 
 .portfolio__item:focus {
